@@ -1,0 +1,13 @@
+credentials:
+  usernames:
+    johnsmith: #replace by actual username
+      email: jsmith@mail.com #replace with an actual email
+      name: John Smith #replace with an actual name
+      password: $2b$12$eIFZWOAnZfzcWybirW3imO2KMex4WshWMuJSImmzzlqFW2eiYdqWi # currently same as the username; more information here: https://github.com/mkhorasani/Streamlit-Authenticator
+cookie:
+  expiry_days: 0
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com
