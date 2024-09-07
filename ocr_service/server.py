@@ -94,19 +94,3 @@ def upload2(filename: str = Form(...), filedata: str = Form(...)):
     except Exception as e:
         return {"result": "Unsuccessful read of the file" + "\n" + e}
     return {"result": pdf_text}
-
-
-
-@app.post("/extract_template_fields", tags=["transformations"])
-def upload4(filename: str = Form(...), filedata: str = Form(...)):
-    pdf_as_bytes = str.encode(filedata)
-    file_decoded = base64.b64decode(pdf_as_bytes)
-    try:
-        with NamedTemporaryFile(dir='.', suffix='.docx') as f:
-            f.write(file_decoded)
-            fields = parse_docx(f.name, 0)
-            fields = sorted(fields)
-            fields_txt = ", ".join(fields)
-    except:
-        return {"result": {"fields":None}}
-    return {"result": {"fields":fields_txt}}
