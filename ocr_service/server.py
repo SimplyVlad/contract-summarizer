@@ -20,7 +20,7 @@ from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.logger import logger
 from pydantic import BaseSettings
 
-from pdf_parser import parse_pdf_language, parse_docx
+from pdf_parser import parse_pdf_language
 
 
 ##TODO adjust those when we deploy
