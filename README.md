@@ -5,7 +5,7 @@ A neat way of getting highlights of pdf documents.
 
 
 
-[A demo of the application](https://github.com/SimplyVlad/contract-summarizer/tree/main/visuals/demo.gif)
+[](https://github.com/SimplyVlad/contract-summarizer/tree/main/visuals/demo.gif)
 
 
 ### Setup
