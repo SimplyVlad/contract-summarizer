@@ -1,2 +1,35 @@
-# contract-summarizer
+# Contract Summarizer
 A neat way of getting highlights of pdf documents.
+
+## Structured Output Extractor
+
+
+
+[A demo of the application](https://github.com/SimplyVlad/contract-summarizer/tree/main/visuals/demo.gif)
+
+
+### Setup
+Make sure you add an OpenAI key either in streamlit/Dockerfile as
+```
+ENV OI_KEY <your key>
+```
+or in the default value of the OI_KEY environment variable in streamlit/contract_summarizer.py
+
+### A very quick demo
+
+With [Docker](https://www.docker.com) installed, run
+
+```lang=bash
+docker-compose up
+```
+Default login credentials: <br>
+usr: jsmith <br>
+pwd: jsmith <br>
+
+### Configuration
+Add more usernames in streamlit/config.yaml and generate the respective hashes using the hasher script in utils/hasher.py
+
+### TODOs
+1. Add more languages
+2. Create a version without default keys
+3. Add language model selection
