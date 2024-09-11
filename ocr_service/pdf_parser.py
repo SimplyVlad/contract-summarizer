@@ -2,7 +2,6 @@ import os
 import pypdfium2 as pdfium
 from nltk.tokenize import sent_tokenize
 import re
-from docx import Document
 import json
 
 
