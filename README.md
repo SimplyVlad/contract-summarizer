@@ -33,3 +33,4 @@ Add more usernames in streamlit/config.yaml and generate the respective hashes u
 1. Add more languages
 2. Create a version without default keys
 3. Add language model selection
+4. Implement a more robust text chunking strategy
