@@ -27,7 +27,7 @@ pwd: jsmith <br>
 It has been tested with emplyoment contracts in both English and German, but it could work with others as well.
 
 ### Configuration
-Add more usernames in streamlit/config.yaml and generate the respective hashes using the hasher script - ```utils/hasher.py```
+Add more usernames in ```streamlit/config.yaml``` and generate the respective hashes using the hasher script - ```utils/hasher.py```
 
 ### TODOs:
 1. Add more languages
